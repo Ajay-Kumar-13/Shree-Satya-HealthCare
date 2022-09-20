@@ -1,0 +1,580 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h3 {
+    margin: 0!important;
+    padding: 0;
+}
+
+/* Navbar */
+
+.topmenu {
+    /* background-color: #e3e9f1 !important; */
+    background-color: #DB00A1!important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 24px;
+    color: white;
+    font-style: normal;
+    padding: 15px;
+    text-align: right;
+}
+
+.topmenu span {
+    margin-right: 10px;
+}
+
+
+.navbar1 {
+    z-index: 1;
+    padding: 3px 0 !important;
+}
+
+#secondmenu>li>a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* color: #00377a; */
+    color: #010101;
+    font-style: normal;
+}
+
+#secondmenu>li>a:hover {
+    color: #DB00A1;
+    font-weight: bold !important;
+}
+
+#Navbar a {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600;
+    line-height: 18px;
+    font-size: 12px;
+    font-style: normal;
+    color: #00377a;
+}
+
+.logo {
+    scale: 1.4;
+}
+
+/* carousel */
+
+.zoomIn {
+    visibility: visible;
+    animation-name: zoomIn;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+.carousel {
+    position: relative;
+}
+
+.cards {
+    position: absolute;
+    bottom: 30px;
+    left: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card1 {
+    margin: 0 20px;
+    background-color: #B5BCF0;
+    color: rgba(255, 255, 255, 0.852);
+    opacity: 0.8;
+}
+
+.card2 {
+    background-color: #384AD3;
+    color: rgba(255, 255, 255, 0.852);
+    opacity: 0.8;
+}
+
+.card1 .ccb1 {
+    background-color: #8F98E2;
+    border-color: #8F98E2;
+    opacity: 0.5;
+    
+}
+
+.card2 .ccb2 {
+    background-color: #25318D;
+    border-color: #25318D;
+    opacity: 0.5;
+    
+}
+
+/* Doctors */
+
+#Doctors {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600;
+    line-height: 18px;
+    font-size: 12px;
+    font-style: normal;
+    /* color: #00377a; */
+    color: #384AD3;
+    padding: 0 40px;
+}
+
+#Doctors .card {
+    color: #384AD3;
+}
+
+.doctor {
+    
+    transition: all 2s ease;
+    cursor: pointer;
+}
+
+.doctor:hover {
+    box-shadow: 5px 5px 5px rgb(0 0 0 /20%);
+}
+
+.doctors {
+    padding: 0 0 30px 0;
+}
+
+.keyword {
+    color: #DB00A1;
+}
+
+.header {
+    text-align: center;
+    /* margin: 5% 0; */
+    margin-top: 5%!important;
+    margin-bottom: 5%;
+    padding: 10px;
+    color: #384AD3;
+}
+
+
+.button {
+    border-radius: 5px;
+    background-color: #DB00A1 !important;
+    border-color: #9C51B6!important;
+    border: none;
+    color: #FFFFFF!important;
+    text-align: center;
+    padding: 10px !important;
+    width: 200px;
+    transition: all 0.5s;
+    margin: 3% 0;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif !important;
+    animation-name: bounceInUp;
+    visibility: visible;
+    animation-delay: 0.2s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.buttonn button:hover {
+    background-color: #FFBDF7!important;
+    color: #010101!important;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* Services */
+
+#services {
+    padding: 0% 7%;
+    font-family: 'Noto Sans', sans-serif;
+    margin-top: 20px;
+}
+
+.serviceText {
+    position: relative;
+}
+
+.service {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.service img {
+    width: 80%;
+}
+
+.service .card {
+    width: 400px;
+    margin: 3% 50px;
+    text-align: center;
+    box-shadow: 0px 0px 5px 5px #ededed;
+    padding: 20px;
+    color: #7c7c7c;
+    border-radius: 20px;
+    transition: all 1s ease;
+    
+}
+
+#services .service .card {
+    height: 400px;
+}
+
+.service .card .card-title {
+    text-align: left;
+}
+
+.service .card:hover {
+    background-color: #FFBDF7;
+    color: #010101;
+    box-shadow: 0px 0px 5px 5px #cbe3fb;
+    transition: all 1s ease;
+}
+
+.service .card:hover h3{
+    color: #010101;
+    transition: all 1s ease;
+}
+
+.service .card:hover button {
+    border-color: #010101;
+    background-color: #FFBDF7;
+    color: #010101;
+    transition: all 1s ease;
+}
+
+.service .card:hover .arrow:before {
+    background-color: #010101;
+    transition: all 1s ease;
+}
+
+.service .card:hover .arrow:after {
+    border-left:11px solid #010101;
+    transition: all 1s ease;
+}
+
+.service .card h3 {
+    font-weight: 600;
+    margin: 30px;
+}
+
+.card-text {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.card-button {
+    text-align: left; 
+}
+
+.arrow{
+    display:inline-block;
+    float:left;
+    cursor:pointer;
+  }
+  
+  .arrow:before{
+    content:'';
+    height:4px;
+    width:20px;
+    background-color:#9C51B6;
+    display:block;
+    float:left;
+    position:relative;
+    top:9px;
+    transition:0.2s ease-in-out;
+  }
+  
+  .arrow:after{
+    content:'';
+    float:left;
+    border-left:11px solid #9C51B6;
+    border-right:11px solid transparent;
+    border-top:11px solid transparent;
+    border-bottom:11px solid transparent;
+  }
+  
+  .arrow:hover:before{
+    width:30px;
+  }
+
+#services {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600;
+    line-height: 18px;
+    font-size: 12px;
+    font-style: normal;
+    color: #00377a;
+}
+
+#services img {
+    border-radius: 50%;
+}
+
+.aboutService {
+    font-size: 18px;
+    line-height: 1.5;
+    color: gray;
+}
+
+.service {
+    display: flex!important;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.serviceImg1 {
+    animation-name: swipeRight;
+    animation-duration: 2s;
+    visibility: visible;
+    animation-fill-mode: both;
+}
+
+.serviceImg2 {
+    animation-name: swipeLeft;
+    animation-duration: 2s;
+    visibility: visible;
+    animation-fill-mode: both;
+}
+
+/* Testimonials */
+
+#Testimonials {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600;
+    line-height: 18px;
+    font-size: 12px;
+    font-style: normal;
+    /* color: #00377a; */
+    color: #384AD3;
+}
+
+#Testimonials .card {
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.stars {
+    /* color: #9C51B6; */
+    color: #DB00A1;
+}
+
+/* Faq */
+
+.faq {
+    margin: 7% 0;
+    padding: 0 6%!important;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.faqHeader {
+    margin-bottom: 30px;
+}
+
+.accordion-body {
+    color: #7c7c7c;;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #DB00A1!important;
+    color: white!important;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem #DB00A1!important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-icon)!important;
+}
+
+/* Footer */
+
+#Footer {
+    background-color:#8F98E2;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    font-style: normal;
+    padding: 30px;
+    color: rgba(255, 255, 255, 0.766);
+}
+
+#Footer img {
+    width: 300px;
+    margin-bottom: 30px;
+}
+#Footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.aboutFooter {
+    margin: 30px 0;
+}
+
+.callNumber {
+    margin: 30px 0;
+}
+
+.socialButtons {
+    padding: 10px 0;
+}
+
+.socialButton {
+    margin-right: 30px;
+    color: rgba(255, 255, 255, 0.766);
+}
+
+.footerHeader {
+    color: #384AD3;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.FooterService a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.766);
+}
+
+.FooterService a:hover{
+    color: #9c51b6;
+}
+
+.FooterService {
+    margin: 30px 0;
+}
+
+.copyright {
+    font-size: 15px;
+    text-align: center;
+}
+
+/* media */
+
+@media (max-width: 990px) {
+    .dropdown {
+        margin: 0 !important;
+    }
+
+    .mainScale {
+        scale: 1 !important;
+    }
+
+    #Doctors.container {
+        margin: 0!important;
+    }
+
+    .carousel img {
+        height: 30vh;
+    }
+
+    .header h3 {
+        margin: 30px 0;
+    }
+
+}
+
+@media (min-width: 770px) {
+    .serviceText {
+        position: relative;
+    }
+
+    .text {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media (min-width: 1050px) {
+    .scale:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 990px) and (min-width: 550px) {
+    .carousel img {
+        height: 50vh;
+    }
+}
+
+/* keyframes */
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(400px);
+    }
+    60% {
+       transform: translateY(-30px); 
+    }
+    80% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes swipeRight {
+    0% {
+        opacity: 0;
+        transform: translateX(400px);
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes swipeLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

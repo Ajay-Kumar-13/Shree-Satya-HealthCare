@@ -21,12 +21,14 @@ import Faq from './components/FaqComponent';
 
 import Testimonial from './components/TestimonialComponent';
 import Footer from './components/FooterComponent';
+import About from './components/AboutusComponent';
 
 function App() {
   return (
     <React.Fragment>
       <Navbar />
       <Carousel />
+      <About />
       <Doctors />
       <Services />
       <Testimonial />

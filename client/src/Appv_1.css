@@ -112,6 +112,21 @@ h3 {
     
 }
 
+/* About us */
+
+.aboutUs {
+    margin: 50px 0;
+    color: #7c7c7c;
+}
+
+.row-content {
+    padding: 0 1%;
+}
+
+.blockQuote {
+    margin-top: 20px;
+}
+
 /* Doctors */
 
 #Doctors {

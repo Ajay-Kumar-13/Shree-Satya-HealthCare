@@ -101,15 +101,22 @@ h3 {
 .card1 .ccb1 {
     background-color: #8F98E2;
     border-color: #8F98E2;
-    opacity: 0.5;
+    opacity: 0.7;
     
 }
 
 .card2 .ccb2 {
     background-color: #25318D;
     border-color: #25318D;
-    opacity: 0.5;
+    opacity: 0.7;
     
+}
+
+.cardBody {
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: large;
 }
 
 /* About us */

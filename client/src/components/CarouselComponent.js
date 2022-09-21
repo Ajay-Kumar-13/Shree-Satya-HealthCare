@@ -15,24 +15,24 @@ function Carousel() {
                 </div>
                 <div className='cards'>
                     <Card style={{ width: "25rem" }} className="card1">
-                        <CardBody>
+                        <CardBody className='cardBody'>
                             <CardTitle>
-                            IVF Center
+                                IVF Center
                             </CardTitle>
-                            
+
                             <Button className='ccb1'>
-                               Read More 
+                                Read More
                             </Button>
                         </CardBody>
                     </Card>
                     <Card style={{ width: "25rem" }} className="card2">
-                        <CardBody>
+                        <CardBody className='cardBody'>
                             <CardTitle>
                                 Health Center
                             </CardTitle>
-                            
+
                             <Button className='ccb2'>
-                               Read More 
+                                Read More
                             </Button>
                         </CardBody>
                     </Card>
@@ -45,7 +45,7 @@ function Carousel() {
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-                
+
             </div>
 
         </React.Fragment>

@@ -8,7 +8,7 @@ function Footer() {
                     <div className="row">
                         <div className="offset-md-1 col-md-4">
                             <div className="row">
-                                <img src="Images/final.png"></img>
+                                <img src="Images/1logo.png"></img>
                             </div>
                             <div className="row">
                                 <div className="col-12 aboutFooter">

@@ -20,20 +20,7 @@ function About() {
                     <div className="col-12 col-md-5 d-flex justify-content-center">
                         <img src='Images/aboutus.jpeg' />
                     </div>
-                    <div className="col-12 blockQuote">
-                        <Card>
-                            <CardBody className="bg-faded">
-                                <blockquote className="blockquote">
-                                    <p className="mb-0">You better cut the pizza in four pieces because
-                                        I'm not hungry enough to eat six.</p>
-                                    <footer className="blockquote-footer" style={{marginTop: "2px"}}>Yogi Berra,
-                                        <cite title="Source Title">The Wit and Wisdom of Yogi Berra,
-                                            P. Pepe, Diversion Books, 2014</cite>
-                                    </footer>
-                                </blockquote>
-                            </CardBody>
-                        </Card>
-                    </div>
+                    
                 </div>
             </div>
         </div>

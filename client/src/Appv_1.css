@@ -1,3 +1,13 @@
+:root {
+    --topmenu: #DB00A1;
+    --navbarAnchor: #010101;
+    --card1: #384AD3;
+    --card1text: rgba(255, 255, 255, 1);
+    --card2: #384AD3;
+    --card2text: rgba(255, 255, 255, 1);
+}
+
+
 html,
 body {
     margin: 0;
@@ -14,7 +24,7 @@ h3 {
 
 .topmenu {
     /* background-color: #e3e9f1 !important; */
-    background-color: #DB00A1!important;
+    background-color: var(--topmenu)!important;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 1rem;
@@ -41,12 +51,12 @@ h3 {
     font-size: 16px;
     line-height: 24px;
     /* color: #00377a; */
-    color: #010101;
+    color: var(--navbarAnchor);
     font-style: normal;
 }
 
 #secondmenu>li>a:hover {
-    color: #DB00A1;
+    color: var(--topmenu);
     font-weight: bold !important;
 }
 
@@ -56,7 +66,6 @@ h3 {
     line-height: 18px;
     font-size: 12px;
     font-style: normal;
-    color: #00377a;
 }
 
 .logo {
@@ -88,32 +97,18 @@ h3 {
 
 .card1 {
     margin: 0 20px;
-    background-color: #B5BCF0;
-    color: rgba(255, 255, 255, 1);
+    background-color: var(--card1);
+    color: var(--card1text);
     opacity: 0.8;
     cursor: pointer;
     
 }
 
 .card2 {
-    background-color: #384AD3;
-    color: rgba(255, 255, 255, 1);
+    background-color: var(--card2);
+    color: var(--card2text);
     opacity: 0.8;
     cursor: pointer;
-}
-
-.card1 .ccb1 {
-    background-color: #8F98E2;
-    border-color: #8F98E2;
-    opacity: 0.7;
-    
-}
-
-.card2 .ccb2 {
-    background-color: #25318D;
-    border-color: #25318D;
-    opacity: 0.7;
-    
 }
 
 .card1:hover, .card2:hover {

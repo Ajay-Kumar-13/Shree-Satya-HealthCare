@@ -19,10 +19,6 @@ function Carousel() {
                             <CardTitle>
                                 IVF Center
                             </CardTitle>
-
-                            <Button className='ccb1'>
-                                Read More
-                            </Button>
                         </CardBody>
                     </Card>
                     <Card style={{ width: "25rem" }} className="card2">
@@ -30,10 +26,6 @@ function Carousel() {
                             <CardTitle>
                                 Health Center
                             </CardTitle>
-
-                            <Button className='ccb2'>
-                                Read More
-                            </Button>
                         </CardBody>
                     </Card>
                 </div>

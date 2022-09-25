@@ -17,12 +17,12 @@ function Footer() {
                             </div>
                             <div className="row">
                                 <div className="col-12 callNumber">
-                                    <p>Call Center (+91 123456789)</p>
-                                    <p>Chat Center (+91 123456789)</p>
+                                    <span>Call Center (+91 123456789)</span> 
+                                    <span>Chat Center (+91 123456789)</span>
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="col-12">
+                            <div className="row socialMedia">
+                                <div className="col-12 followColoumn">
                                     <p>Follow us on Social Media:</p>
                                 </div>
                                 <div className="col-12 socialButtons">

@@ -1,10 +1,31 @@
 :root {
     --topmenu: #DB00A1;
+    --topmenuText: white;
     --navbarAnchor: #010101;
     --card1: #384AD3;
     --card1text: rgba(255, 255, 255, 1);
     --card2: #384AD3;
     --card2text: rgba(255, 255, 255, 1);
+    --boxShadow: rgb(0 0 0 /30%);
+    --cardBodyText: white;
+    --aboutUsText: #7c7c7c;
+    --DoctorsText: #384AD3;
+    --keyword: #DB00A1;
+    --header: #384AD3;
+    --buttonBackground: #DB00A1;
+    --buttonText: #FFFFFF;
+    --buttonBorder: #9C51B6;
+    --buttonHoverBackground: #FFBDF7;
+    --buttonHoverText: #010101;
+    --servicesText: #00377a;
+    --aboutService: gray;
+    --testimonialsText: #384AD3;
+    --accordionBody: #7c7c7c;
+    --accordionButtonFocusBackground: #DB00A1;
+    --accordionButtonFocusColor: white;
+    --accordionButtonFocusBoxshadow: #DB00A1;
+    --footerBackground: #8F98E2;
+    --footerText: rgba(255, 255, 255, 0.766);
 }
 
 
@@ -29,7 +50,7 @@ h3 {
     font-weight: 600;
     font-size: 1rem;
     line-height: 24px;
-    color: white;
+    color: var(--topmenuText);
     font-style: normal;
     padding: 15px;
     text-align: right;
@@ -112,13 +133,13 @@ h3 {
 }
 
 .card1:hover, .card2:hover {
-    box-shadow: 5px 5px 5px rgb(0 0 0 /30%);
+    box-shadow: 5px 5px 5px var(--boxShadow);
     transition: all 1s ease;
 }
 
 .cardBody {
     text-align: center;
-    color: white;
+    color: var(--cardBodyText);
     font-size: large;
 }
 
@@ -126,7 +147,7 @@ h3 {
 
 .aboutUs {
     margin: 50px 0;
-    color: #7c7c7c;
+    color: var(--aboutUsText);
 }
 
 .row-content {
@@ -147,12 +168,12 @@ h3 {
     font-size: 12px;
     font-style: normal;
     /* color: #00377a; */
-    color: #384AD3;
+    color: var(--DoctorsText);
     padding: 0 40px;
 }
 
 #Doctors .card {
-    color: #384AD3;
+    color: var(--DoctorsText);
 }
 
 .doctor {
@@ -170,7 +191,7 @@ h3 {
 }
 
 .keyword {
-    color: #DB00A1;
+    color: var(--keyword);
 }
 
 .header {
@@ -179,16 +200,16 @@ h3 {
     margin-top: 5%!important;
     margin-bottom: 5%;
     padding: 10px;
-    color: #384AD3;
+    color: var(--header);
 }
 
 
 .button {
     border-radius: 5px;
-    background-color: #DB00A1 !important;
-    border-color: #9C51B6!important;
+    background-color: var(--buttonBackground) !important;
+    border-color: var(--buttonBorder)!important;
     border: none;
-    color: #FFFFFF!important;
+    color: var(--buttonText)!important;
     text-align: center;
     padding: 10px !important;
     width: 200px;
@@ -204,8 +225,8 @@ h3 {
 }
 
 .buttonn button:hover {
-    background-color: #FFBDF7!important;
-    color: #010101!important;
+    background-color: var(--buttonHoverBackground)!important;
+    color: var(--buttonHoverText)!important;
 }
 
 .button span {
@@ -239,6 +260,11 @@ h3 {
     padding: 0% 7%;
     font-family: 'Noto Sans', sans-serif;
     margin-top: 20px;
+    font-weight: 600;
+    line-height: 18px;
+    font-size: 12px;
+    font-style: normal;
+    color: var(--servicesText);
 }
 
 .serviceText {
@@ -250,62 +276,9 @@ h3 {
     flex-direction: row;
     justify-content: center;
 }
+
 .service img {
     width: 80%;
-}
-
-.service .card {
-    width: 400px;
-    margin: 3% 50px;
-    text-align: center;
-    box-shadow: 0px 0px 5px 5px #ededed;
-    padding: 20px;
-    color: #7c7c7c;
-    border-radius: 20px;
-    transition: all 1s ease;
-    
-}
-
-#services .service .card {
-    height: 400px;
-}
-
-.service .card .card-title {
-    text-align: left;
-}
-
-.service .card:hover {
-    background-color: #FFBDF7;
-    color: #010101;
-    box-shadow: 0px 0px 5px 5px #cbe3fb;
-    transition: all 1s ease;
-}
-
-.service .card:hover h3{
-    color: #010101;
-    transition: all 1s ease;
-}
-
-.service .card:hover button {
-    border-color: #010101;
-    background-color: #FFBDF7;
-    color: #010101;
-    transition: all 1s ease;
-}
-
-.service .card:hover .arrow:before {
-    background-color: #010101;
-    transition: all 1s ease;
-}
-
-.service .card:hover .arrow:after {
-    border-left:11px solid #010101;
-    transition: all 1s ease;
-}
-
-.service .card h3 {
-    font-weight: 600;
-    margin: 30px;
 }
 
 .card-text {
@@ -348,15 +321,6 @@ h3 {
     width:30px;
   }
 
-#services {
-    font-family: 'Montserrat', sans-serif !important;
-    font-weight: 600;
-    line-height: 18px;
-    font-size: 12px;
-    font-style: normal;
-    color: #00377a;
-}
-
 #services img {
     border-radius: 50%;
 }
@@ -364,7 +328,7 @@ h3 {
 .aboutService {
     font-size: 18px;
     line-height: 1.5;
-    color: gray;
+    color: var(--aboutService);
 }
 
 .service {
@@ -396,7 +360,7 @@ h3 {
     font-size: 12px;
     font-style: normal;
     /* color: #00377a; */
-    color: #384AD3;
+    color: var(--testimonialsText);
 }
 
 #Testimonials .card {
@@ -406,7 +370,7 @@ h3 {
 
 .stars {
     /* color: #9C51B6; */
-    color: #DB00A1;
+    color: var(--keyword);
 }
 
 /* Faq */
@@ -422,16 +386,16 @@ h3 {
 }
 
 .accordion-body {
-    color: #7c7c7c;;
+    color: var(--accordionBody);
 }
 
 .accordion-button:not(.collapsed){
-    background-color: #DB00A1!important;
-    color: white!important;
+    background-color: var(--accordionButtonFocusBackground)!important;
+    color: var(--accordionButtonFocusColor)!important;
 }
 
 .accordion-button:focus {
-    box-shadow: 0 0 0 0.25rem #DB00A1!important;
+    box-shadow: 0 0 0 0.25rem var(--accordionButtonFocusBoxshadow)!important;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -441,13 +405,13 @@ h3 {
 /* Footer */
 
 #Footer {
-    background-color:#8F98E2;
+    background-color:var(--footerBackground);
     font-family: 'Noto Sans', sans-serif;
     font-weight: 200;
     font-size: 20px;
     font-style: normal;
     padding: 30px 30px 10px 30px;
-    color: rgba(255, 255, 255, 0.766);
+    color: var(--footerText);
 }
 
 #Footer img {
@@ -487,27 +451,27 @@ h3 {
 
 .socialButton {
     margin-right: 30px;
-    color: rgba(255, 255, 255, 0.766);
+    color: var(--footerText);
     cursor: pointer;
 }
 
 .socialButton:hover {
-    color: #DB00A1;
+    color: var(--keyword);
 }
 
 .footerHeader {
-    color: #384AD3;
+    color: var(--header);
     margin-bottom: 40px;
     text-align: left;
 }
 
 .FooterService a{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.766);
+    color: var(--footerText);
 }
 
 .FooterService a:hover{
-    color: #DB00A1;
+    color: var(--keyword);
 }
 
 .FooterService {
